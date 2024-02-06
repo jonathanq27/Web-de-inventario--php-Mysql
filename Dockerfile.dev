@@ -1,0 +1,17 @@
+# Usa la imagen base de PHP con Apache
+FROM php:8.2-apache
+
+# Instala las extensiones PHP necesarias
+RUN docker-php-ext-install mysqli pdo pdo_mysql
+
+# Establece el directorio de trabajo en el directorio raíz del servidor web
+WORKDIR /var/www/html
+
+# Copia los archivos de la aplicación PHP al contenedor
+COPY . .
+
+# Expone el puerto 80 para el servidor web Apache
+EXPOSE 80
+
+# Inicia el servidor Apache al ejecutar el contenedor
+CMD ["apache2-foreground"]

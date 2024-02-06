@@ -1,0 +1,14 @@
+# Usa la imagen base de MySQL
+FROM mysql:8.3.0
+
+# Establece la contraseña de root para MySQL
+ENV MYSQL_ROOT_PASSWORD=root
+
+# Establece el directorio de trabajo en el directorio raíz del servidor MySQL
+WORKDIR /docker-entrypoint-initdb.d
+
+# Copia los archivos SQL de inicialización al contenedor
+COPY ./mysql-init.sql /docker-entrypoint-initdb.d
+
+# Expone el puerto 3306 para MySQL
+EXPOSE 3306
