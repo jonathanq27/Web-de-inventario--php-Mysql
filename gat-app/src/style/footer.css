@@ -1,0 +1,21 @@
+/* Estilos generales del footer */
+footer {
+    background-color: #333; /* Color de fondo del footer */
+    color: #fff; /* Color del texto del footer */
+    text-align: center; /* Alineación del contenido al centro */
+    padding: 20px 0; /* Espaciado interno del footer */
+    width: 100%; /* Ancho del footer al 100% */
+    position: fixed; /* Fijar posición del footer */
+    bottom: 0; /* Colocar en la parte inferior de la pantalla */
+}
+
+/* Estilos para el contenido del footer */
+.footer-content {
+    max-width: 1200px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centrar el contenido horizontalmente */
+}
+
+/* Estilos para el texto del footer */
+.footer-content p {
+    margin: 0; /* Eliminar márgenes por defecto */
+}
