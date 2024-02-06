@@ -16,6 +16,6 @@
             <p> © 2024 Todos los derechos reservados</p>
         </div>
     </footer>
-
+<? require '../style/footer.css' ?>
 </body>
 </html>
