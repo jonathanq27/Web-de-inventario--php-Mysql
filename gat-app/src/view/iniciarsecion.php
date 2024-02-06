@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar Sesión</title>
-    <link rel="stylesheet" href="/src/style/style.css">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
     <div class="container">
@@ -25,12 +25,12 @@
                 <button type="submit">Iniciar Sesión</button>
             </form>
             <div class="additional-links">
-                <a href="src/view/index.html">¿Olvidaste tu contraseña?</a>
+                <a href="src\view\recupera_contrase.php">¿Olvidaste tu contraseña?</a>
             </div>
         </div>
         
     </div>
-    
+    <?PHP require 'footer.php' ?>
     
 </body>
 </html>
