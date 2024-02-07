@@ -1,3 +1,4 @@
+<?php require '../routes/configroutes.php'?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -8,13 +9,15 @@
 </head>
 <body>
     <div class="container">
-        <img src="imagen.png" alt="Logo">
+        <img src="image/password.png" alt="Logo">
         <h2>Recuperar Contraseña</h2>
         <form action="recuperar.php" method="post">
             <input type="text" name="username" placeholder="Ingrese su nombre de usuario" required>
             <input type="submit" value="Enviar">
         </form>
-        <a href="gat-app\index.php" class="login-link">Inicia sesión</a>
+        <a href="../../index.php" class="login-link">Inicia sesión</a>
     </div>
+
+    
 </body>
 </html>

@@ -1,3 +1,6 @@
 <?php 
-require './src/view/iniciarsecion.php'
+include './src/view/iniciarsecion.php';
+
+
+
 ?>
