@@ -15,7 +15,7 @@
             <h2>Iniciar Sesión</h2>
             <img src="src/view/image/user.png" alt="Usuario" class="user-icon">
             <?php include './src/routes/configroutes.php';?>
-            <form action="<?php echo Rutasvista?>iniciarsecion.php" method="post">
+            <form action="<?php echo Rutasvista?>inicio.php" method="post">
                 <div class="form-group">
                     <label for="username">Usuario:</label>
                     <input type="text" id="username" name="username" required>

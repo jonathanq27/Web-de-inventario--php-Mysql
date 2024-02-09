@@ -1,18 +1,57 @@
-/* Estilos para el encabezado */
+body {
+    margin: 0;
+    padding: 0;
+}
+
 header {
+    background-color: #cccaca;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #f0f0f0;
+    margin-bottom: 20px; /* Agregar margen inferior al header */
 }
+
+.logo {
+    /* Centrar el logo horizontalmente */
+    margin: left;
+    
+}
+
 .usuario {
     display: flex;
     align-items: center;
 }
+
 .usuario img {
     width: 40px;
-    height: 40px;
-    border-radius: 50%;
+    height: auto;
     margin-right: 10px;
+}
+
+.usuario span {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.usuario a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Media query para hacer el diseño responsive */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .usuario {
+        margin-top: 10px;
+    }
+
+    .logo {
+        /* Centrar el logo horizontalmente en pantallas pequeñas */
+        margin: 0;
+    }
 }
